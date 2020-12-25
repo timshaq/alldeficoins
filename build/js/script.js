@@ -298,7 +298,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   /***/
   function _(module, exports, __webpack_require__) {
-    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\start template\\src\\js\\script.js */\"./src/js/script.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\start template\\src\\js\\webpTest.js */\"./src/js/webpTest.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/script.js_./src/js/webpTest.js?");
+    eval("__webpack_require__(/*! C:\\Users\\timur\\Desktop\\alldeficoins\\src\\js\\script.js */\"./src/js/script.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\timur\\Desktop\\alldeficoins\\src\\js\\webpTest.js */\"./src/js/webpTest.js\");\n\n\n//# sourceURL=webpack:///multi_./src/js/script.js_./src/js/webpTest.js?");
     /***/
   }
   /******/

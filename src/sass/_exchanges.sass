@@ -1,0 +1,98 @@
+.large-exchanges
+	margin-top: 40px
+	&__large-card
+	&__fix-cont
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	& .large-card
+		width: 555px
+		padding: 15px 15px 24px
+		margin-bottom: 32px
+		display: flex
+		justify-content: space-between
+		border: 1px solid var(--black10)
+		&__preview
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 150px
+			min-height: 208px
+			&:hover
+				& .large-card__title,
+				& .large-card__subtitle
+					color: var(--blue)
+
+		&__ph
+			width: 100%
+			height: 144px
+			object-fit: contain
+			margin-bottom: 8px
+		&__title
+			text-align: center
+			margin-bottom: 16px
+		&__subtitle
+			font-size: 18px
+			line-height: 100%
+			text-align: center
+		&__description
+			width: 345px
+			display: flex
+			flex-direction: column
+		&__article
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 4
+			line-height: 27px
+			max-height: 108px
+		&__btn
+			background-color: var(--blue50)
+			padding: 21px 0
+			display: flex
+			justify-content: center
+			width: 100%
+			margin-top: auto
+.thumb-exchanges
+	&__large-card
+	&__fix-cont
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	& .thumb-card
+		border: 1px solid var(--black10)
+		display: flex
+		justify-content: space-between
+		margin-bottom: 24px
+		width: 263px
+		min-height: 168px
+		padding: 10px 15px 15px
+		&__preview
+			width: 83px
+		&__rating
+		&__star
+			width: 12px
+			height: 11px
+			object-fit: cover
+		&__ph
+			width: 100%
+			height: 80.48px
+			object-fit: contain
+			margin-top: 23px
+		&__description
+			width: 135px
+		&__title
+			font-size: 18px
+		&__article
+			font-size: 14px
+			letter-spacing: -0.05em
+			margin-top: 20px
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 4
+			line-height: 21px
+			max-height: 84px
+

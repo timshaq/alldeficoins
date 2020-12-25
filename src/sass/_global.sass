@@ -60,15 +60,14 @@ h1,h2,h3,h4,h5,h6
 /*    <GLOBAL>    */
 
 \:root
-	--white: rgba(255,255,255, 1)
+	--white: rgba(255,255,255,1)
+	--white30: rgba(255,255,255,.3)
 	--black: rgba(51,51,51,1)
 	--black60: rgba(51,51,51,.6)
 	--black30: rgba(51,51,51,.3)
 	--black10: rgba(51,51,51, .1)
-	--orange: rgba(255,115,36,1)
-	--orange90: rgba(255,115,36,.9)
-	--orange90: rgba(255,115,36,.9)
-	--blue: rgba(28,28,225,1)
+	--orange: rgba(255,115,36,.9)
+	--blue: rgba(28,28,225,.8)
 	--blue50: rgba(28,28,225,.5)
 
 .fix-cont
@@ -96,6 +95,8 @@ main
 		color: var(--orange)
 .link
 	color: var(--blue)
+.white-text
+	color: var(--white)
 .tag
 	font-family: Segoe UI
 	font-style: normal
@@ -142,6 +143,11 @@ main
 			background-position: -72px -26px
 		&:hover
 			background-position: -158px 0
+	&.rss
+		width: 21px
+		background-position: -87px -25px
+		&:hover
+			background-position: -114px -25px
 .search-btn
 	width: 21px
 	background-position: 0 -52px
@@ -150,7 +156,11 @@ main
 .close-btn
 	width: 21px
 	background-position: -52px -52px
-
+	
+.plain-title
+	font-weight: bold
+	font-size: 22px
+	line-height: 100%
 // /SPRITE
 .page-about
 	&__fix-cont
@@ -165,9 +175,6 @@ main
 			bottom: 0
 			left: 0
 	&__title
-		font-weight: bold
-		font-size: 22px
-		line-height: 100%
 		padding-bottom: 18px
 	&__article
 		font-size: 18px
