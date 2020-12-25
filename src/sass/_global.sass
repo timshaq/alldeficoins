@@ -1,0 +1,188 @@
+$tab: 1199px
+$mTab: 992px
+$sTab: 768px
+$mob: 576px
+
+$dCol: 67
+$dMar: 31
+/*    <NULL>    */
+
+*
+	padding: 0
+	margin: 0
+	border: 0
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+*, *:before,*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+*:focus, *:active
+	outline: none
+a:focus, a:active
+	outline: none
+nav, footer, header, aside
+	display: block
+html
+	overflow-x: hidden
+html, body
+	font-size: 100%
+	line-height: 1
+	font-size: 14px
+	-moz-text-size-adjust: 100%
+	-webkit-text-size-adjust: none
+	-webkit-overflow-scrolling: touch
+input, button, textarea
+	font-family: inherit
+input::-ms-clear
+	display: none
+button
+	cursor: pointer
+	background: transparent
+button::-moz-focus-inner
+	padding: 0
+	border: 0
+a, a:visited
+	text-decoration: none
+a:hover
+	text-decoration: none
+ul li
+	list-style: none
+img
+	vertical-align: top
+	max-width: 100%
+h1,h2,h3,h4,h5,h6
+	font-size: inherit
+	font-weight: 400
+
+/*    </NULL>    */
+
+
+/*    <GLOBAL>    */
+
+\:root
+	--white: rgba(255,255,255, 1)
+	--black: rgba(51,51,51,1)
+	--black60: rgba(51,51,51,.6)
+	--black30: rgba(51,51,51,.3)
+	--black10: rgba(51,51,51, .1)
+	--orange: rgba(255,115,36,1)
+	--orange90: rgba(255,115,36,.9)
+	--orange90: rgba(255,115,36,.9)
+	--blue: rgba(28,28,225,1)
+	--blue50: rgba(28,28,225,.5)
+
+.fix-cont
+	height: 100%
+	width: 100%
+	max-width: 1140px
+	min-width: 320px
+	margin: 0 auto
+	@media(max-width:$tab)
+		max-width: 708px
+	@media(max-width:$sTab) 
+		max-width: none
+		padding-left: 15px
+		padding-right: 15px
+
+body, a
+	color: var(--black)
+main
+	margin-top: 130px
+.nav-link
+	color: var(--black)
+	font-size: 16px
+	line-height: 21px
+	&:hover
+		color: var(--orange)
+.link
+	color: var(--blue)
+.tag
+	font-family: Segoe UI
+	font-style: normal
+	font-weight: 700
+	font-size: 11px
+	line-height: 15px
+	color: var(--orange)
+	text-transform: uppercase
+.plain-text
+	font-family: Segoe UI
+	font-style: normal
+	font-weight: normal
+	font-size: 18px
+	line-height: 150%
+.logo
+	font-family: Print Clearly
+	font-size: 36px
+	line-height: 36px
+
+// SPRITE
+.social-link, .search-btn, .close-btn
+	background-image: url('../img/sprite.png')
+	height: 21px
+.social-link
+	display: block
+	&.tw
+		width: 25.41px
+		background-position: 0 0
+		&.invert
+			background-position: 0 -26px
+		&:hover
+			background-position: -86px 0
+	&.vk
+		width: 37.5px
+		background-position: -30px 0
+		&.invert
+			background-position: -30px -26px
+		&:hover
+			background-position: -116px 0
+	&.fb
+		width: 9.8px
+		background-position: -72px 0
+		&.invert
+			background-position: -72px -26px
+		&:hover
+			background-position: -158px 0
+.search-btn
+	width: 21px
+	background-position: 0 -52px
+	&:hover
+		background-position: -26px -52px
+.close-btn
+	width: 21px
+	background-position: -52px -52px
+
+// /SPRITE
+.page-about
+	&__fix-cont
+		position: relative
+		padding-left: 15px
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: var(--black30)
+			position: absolute
+			bottom: 0
+			left: 0
+	&__title
+		font-weight: bold
+		font-size: 22px
+		line-height: 100%
+		padding-bottom: 18px
+	&__article
+		font-size: 18px
+		line-height: 150%
+		width: 735px
+		padding-bottom: 23px
+
+.load-more
+	display: flex
+	justify-content: center
+	margin-top: 48px
+	&__btn
+		font-weight: bold
+		font-size: 24px
+		line-height: 32px
+		color: var(--blue)
+
+/*    </GLOBAL>    */

@@ -1,0 +1,100 @@
+.news-card
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	&__title
+		font-weight: bold
+		font-size: 18px
+		overflow: hidden
+		text-overflow: ellipsis
+		display: -webkit-box
+		-webkit-box-orient: vertical
+		-webkit-line-clamp: 3
+		line-height: 24px
+		max-height: 72px
+	&__tag
+		margin-top: 8px
+		margin-bottom: 9px
+	&__ph
+		width: 100%
+		height: 176px
+		object-fit: cover
+	&.first
+		& .news-card__ph
+			height: 360px
+		& .news-card__title
+			font-size: 36px
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			line-height: 48px
+			max-height: 96px
+	&.second
+		& .news-card__ph
+			height: 360px
+		& .news-card__title
+			font-size: 32px
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			line-height: 43px
+			max-height: 86px
+.last-news
+	margin-top: 41px
+	&__fix-cont
+		display: flex
+		justify-content: space-between
+	&__col
+		width: 555px
+		&.large
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+	&__card
+
+	&__squares
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		& .news-card
+			width: 263px
+			margin-bottom: 16px
+	&__rows
+		& .news-card
+			flex-direction: row
+			&:not(:last-child)
+				margin-bottom: 32px
+			&__ph
+				width: 180px
+				height: 120px
+			&__col
+				flex: 2 1 359px
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				margin-left: 15px
+				padding-right: 15px
+			&__title
+				font-size: 20px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 2
+				line-height: 27px
+				max-height: 54px
+.recent-news
+	margin-top: 60px
+	&__fix-cont
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__card
+		margin-bottom: 32px
+		width: 264px
+
+
