@@ -123,7 +123,7 @@ function compress () {
     .pipe(changed(build.img))
         .pipe(
             webp({
-                quality: 70
+                quality: 90
             }))
         .pipe(gulp.dest(build.img))
         

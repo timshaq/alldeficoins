@@ -126,6 +126,20 @@ main {
   margin-top: 130px;
 }
 
+*::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--blue50);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track, *::-webkit-scrollbar-track-piece {
+  background-color: var(--blue10);
+}
+
 .nav-link {
   color: var(--black);
   font-size: 16px;
@@ -166,6 +180,10 @@ main {
   font-family: Print Clearly;
   font-size: 36px;
   line-height: 36px;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .no-webp .social-link, .no-webp .search-btn, .no-webp .close-btn {
@@ -420,6 +438,8 @@ main {
 
 .news-card.first .news-card__ph {
   height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card.first .news-card__title {
@@ -435,6 +455,8 @@ main {
 
 .news-card.second .news-card__ph {
   height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-card.second .news-card__title {
@@ -644,7 +666,7 @@ main {
   margin-top: 23px;
 }
 
-.guide-section .plain-card {
+.plain-card {
   width: 263px;
   margin-bottom: 48px;
   border: 1px solid var(--black10);
@@ -664,7 +686,7 @@ main {
           justify-content: flex-start;
 }
 
-.guide-section .plain-card__title {
+.plain-card__title {
   background-color: var(--orange);
   font-weight: bold;
   font-size: 18px;
@@ -675,7 +697,7 @@ main {
   padding: 8px 15px;
 }
 
-.guide-section .plain-card__article {
+.plain-card__article {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -687,8 +709,8 @@ main {
   margin-top: 8px;
 }
 
-.guide-section .header-card__link,
-.guide-section .plain-card__link {
+.header-card__link,
+.plain-card__link {
   font-size: 18px;
   line-height: 150%;
   text-align: right;
@@ -879,6 +901,279 @@ main {
   max-height: 84px;
 }
 
+.ex-review__fix-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ex-review .review {
+  width: 750px;
+}
+
+.ex-review .review__article {
+  margin: 36px 0;
+}
+
+.ex-review .review__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 21px;
+}
+
+.ex-review .review__link-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--orange);
+  width: 345px;
+  padding: 21px 0;
+  margin-top: 53px;
+}
+
+.ex-review .review__slider {
+  margin: 25px 0;
+}
+
+.ex-review .review__ph {
+  margin: 25px 0;
+}
+
+.ex-review .preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ex-review .preview__icon {
+  width: 96px;
+  height: 96px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+}
+
+.ex-review .preview__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+
+.ex-review .plain-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ex-review .plain-list__li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 2 48%;
+      -ms-flex: 1 2 48%;
+          flex: 1 2 48%;
+}
+
+.ex-review .plain-list__name {
+  margin-right: 15px;
+}
+
+.ex-review .plain-list__value {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.ex-review .pros-cons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 40px 0;
+}
+
+.ex-review .pros-cons__cont {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 48%;
+      -ms-flex: 1 1 48%;
+          flex: 1 1 48%;
+}
+
+.ex-review .pros-cons__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 21px;
+}
+
+.ex-review .pros-cons__list-pros .pros-cons__li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.no-webp .ex-review .pros-cons__list-pros .pros-cons__li:before {
+  background-image: url("../img/sprite.png"); }
+
+.ex-review .pros-cons__list-pros .pros-cons__li:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-position: -78px -55px;
+}
+
+.ex-review .pros-cons__li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.ex-review .pros-cons__list-cons .pros-cons__li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.no-webp .ex-review .pros-cons__list-cons .pros-cons__li:before {
+  background-image: url("../img/sprite.png"); }
+
+.ex-review .pros-cons__list-cons .pros-cons__li:before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 2px;
+  background-position: -98px -62px;
+}
+
+.ex-review .slider {
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+}
+
+.ex-review .slider__ph {
+  width: 398px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ex-review .slider__ph:not(:last-child) {
+  margin-right: 20px;
+}
+
+.ex-review .aside {
+  width: 262px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px;
+}
+
+.ex-review .aside__rates {
+  margin-top: 19px;
+  height: 120px;
+  overflow-y: scroll;
+}
+
+.ex-review .aside__li {
+  position: relative;
+  padding-left: 45px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--black30);
+  cursor: pointer;
+}
+
+.ex-review .aside__li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.ex-review .aside__li:before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: var(--black30);
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.ex-review .aside__li:hover, .ex-review .aside__li.active {
+  color: var(--orange);
+}
+
+.ex-review .aside__li:hover:before, .ex-review .aside__li.active:before {
+  background-color: var(--orange);
+}
+
+.article-page__aside {
+  width: 330px;
+}
+
+.article-page__aside .last-news .news-card__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.05em;
+}
+
+.article-page__aside .last-news__rows .news-card__ph {
+  height: 80px;
+  width: 135px;
+}
+
+.article-page__aside .last-news__rows .news-card__col {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  width: 180px;
+}
+
+.article-page__aside .plain-card {
+  margin-top: 24px;
+}
+
+.article-page__aside .page-about__fix-cont:not(:first-child) {
+  margin-top: 32px;
+}
+
 .footer {
   margin-top: 60px;
   background-color: var(--black);
@@ -941,6 +1236,10 @@ main {
   line-height: 21px;
 }
 
+.footer__nav-item a:hover {
+  color: var(--orange);
+}
+
 .footer__nav-item:not(:last-child) {
   margin-bottom: 11px;
 }
@@ -979,5 +1278,9 @@ main {
 }
 
 .webp .social-link, .webp .search-btn, .webp .close-btn { background-image: url(../img/sprite.webp); }
+
+.webp .ex-review .pros-cons__list-pros .pros-cons__li:before { background-image: url(../img/sprite.webp); }
+
+.webp .ex-review .pros-cons__list-cons .pros-cons__li:before { background-image: url(../img/sprite.webp); }
 
 /*# sourceMappingURL=srcmaps/style.css.map */

@@ -1,0 +1,142 @@
+.ex-review
+	&__fix-cont
+		display: flex
+		justify-content: space-between
+	&__review
+	&__aside
+
+	& .review
+		width: 750px
+		&__preview
+
+		&__article
+			margin: 36px 0
+		&__title
+			font-weight: bold
+			font-size: 18px
+			line-height: 150%
+			margin-bottom: 21px
+		&__plain-list
+		&__link-btn
+			display: flex
+			justify-content: center
+			background-color: var(--orange)
+			width: 345px
+			padding: 21px 0
+			margin-top: 53px
+		&__pros-cons
+
+		&__slider
+			margin: 25px 0
+		&__ph
+			margin: 25px 0
+
+	& .preview
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		&__icon
+			width: 96px
+			height: 96px
+			object-fit: contain
+			margin-right: 30px
+		&__title
+			font-weight: bold
+			font-size: 36px
+			line-height: 48px
+			margin-bottom: 40px
+	& .plain-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+		&__li
+			flex: 1 2 48%
+		&__name
+			margin-right: 15px
+		&__value
+			font-weight: bold
+			font-size: 18px
+			line-height: 150%
+	& .pros-cons
+		display: flex
+		justify-content: space-between
+		margin: 40px 0
+		&__cont
+			flex: 1 1 48%
+		&__title
+			font-weight: bold
+			font-size: 18px
+			line-height: 150%
+			margin-bottom: 21px
+		&__list-pros
+			& .pros-cons__li
+				position: relative
+				padding-left: 25px
+				&:before
+					content: ' '
+					position: absolute
+					left: 0
+					width: 15px
+					height: 15px
+					background-image: url('../img/sprite.png')
+					background-position: -78px -55px
+		&__li
+			&:not(:last-child)
+				margin-bottom: 13px
+
+		&__list-cons
+			& .pros-cons__li
+				position: relative
+				padding-left: 25px
+				&:before
+					content: ' '
+					position: absolute
+					left: 0
+					top: 50%
+					width: 15px
+					height: 2px
+					background-image: url('../img/sprite.png')
+					background-position: -98px -62px
+
+	& .slider
+		width: 100%
+		white-space: nowrap
+		overflow-y: hidden
+		padding-bottom: 10px
+		&__ph
+			width: 398px
+			height: 100%
+			object-fit: contain
+			&:not(:last-child)
+				margin-right: 20px
+	& .aside
+		width: 262px
+		height: fit-content
+		position: sticky
+		top: 120px
+		&__rates
+			margin-top: 19px
+			height: 120px
+			overflow-y: scroll
+		&__li
+			position: relative
+			padding-left: 45px
+			font-weight: bold
+			font-size: 18px
+			line-height: 150%
+			color: var(--black30)
+			cursor: pointer
+			&:not(:last-child)
+				margin-bottom: 13px
+			&:before
+				content: ''
+				width: 30px
+				height: 2px
+				background-color: var(--black30)
+				position: absolute
+				top: 50%
+				left: 0
+			&:hover, &.active
+				color: var(--orange)
+				&:before
+					background-color: var(--orange)

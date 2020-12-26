@@ -87,6 +87,16 @@ body, a
 	color: var(--black)
 main
 	margin-top: 130px
+*
+	&::-webkit-scrollbar
+		height: 6px
+		width: 6px
+	&::-webkit-scrollbar-thumb
+		background-color: var(--blue50)
+		border-radius: 10px
+	&::-webkit-scrollbar-track,
+	&::-webkit-scrollbar-track-piece,
+		background-color: var(--blue10)
 .nav-link
 	color: var(--black)
 	font-size: 16px
@@ -115,6 +125,8 @@ main
 	font-family: Print Clearly
 	font-size: 36px
 	line-height: 36px
+.italic
+	font-style: italic
 
 // SPRITE
 .social-link, .search-btn, .close-btn
