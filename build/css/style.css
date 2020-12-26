@@ -176,6 +176,18 @@ main {
   line-height: 150%;
 }
 
+.plain-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.plain-small-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .logo {
   font-family: Print Clearly;
   font-size: 36px;
@@ -186,10 +198,8 @@ main {
   font-style: italic;
 }
 
-.no-webp .social-link, .no-webp .search-btn, .no-webp .close-btn {
-  background-image: url("../img/sprite.png"); }
-
 .social-link, .search-btn, .close-btn {
+  background-image: url("../img/sprite.svg");
   height: 21px;
 }
 
@@ -229,7 +239,7 @@ main {
 }
 
 .social-link.fb.invert {
-  background-position: -72px -26px;
+  background-position: -72px -25px;
 }
 
 .social-link.fb:hover {
@@ -257,12 +267,6 @@ main {
 .close-btn {
   width: 21px;
   background-position: -52px -52px;
-}
-
-.plain-title {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 100%;
 }
 
 .page-about__fix-cont {
@@ -1042,15 +1046,13 @@ main {
   padding-left: 25px;
 }
 
-.no-webp .ex-review .pros-cons__list-pros .pros-cons__li:before {
-  background-image: url("../img/sprite.png"); }
-
 .ex-review .pros-cons__list-pros .pros-cons__li:before {
-  content: ' ';
+  content: '';
   position: absolute;
   left: 0;
   width: 15px;
   height: 15px;
+  background-image: url("../img/sprite.svg");
   background-position: -78px -55px;
 }
 
@@ -1063,16 +1065,14 @@ main {
   padding-left: 25px;
 }
 
-.no-webp .ex-review .pros-cons__list-cons .pros-cons__li:before {
-  background-image: url("../img/sprite.png"); }
-
 .ex-review .pros-cons__list-cons .pros-cons__li:before {
-  content: ' ';
+  content: '';
   position: absolute;
   left: 0;
   top: 50%;
   width: 15px;
   height: 2px;
+  background-image: url("../img/sprite.svg");
   background-position: -98px -62px;
 }
 
@@ -1144,6 +1144,12 @@ main {
 
 .article-page__aside {
   width: 330px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .article-page__aside .last-news .news-card__title {
@@ -1172,6 +1178,114 @@ main {
 
 .article-page__aside .page-about__fix-cont:not(:first-child) {
   margin-top: 32px;
+}
+
+.article-page__fix-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article-page .article {
+  width: 750px;
+  padding-bottom: 32px;
+}
+
+.article-page .article__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.article-page .article__ph {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 30px 0;
+}
+
+.article-page .article__article {
+  margin: 20px 0;
+}
+
+.hr-bottom {
+  position: relative;
+}
+
+.hr-bottom:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 165px;
+  height: 1px;
+  background-color: var(--black30);
+}
+
+.similar {
+  margin-top: 24px;
+}
+
+.similar__fix-cont {
+  padding-bottom: 24px;
+}
+
+.similar__title {
+  margin-bottom: 10px;
+}
+
+.similar__li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.similar__li:before {
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: var(--orange);
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.similar__li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tags {
+  margin-top: 24px;
+}
+
+.tags__fix-cont {
+  padding-bottom: 24px;
+}
+
+.tags__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.tags__li {
+  margin-right: 15px;
+}
+
+.recent-news__title {
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -1276,11 +1390,5 @@ main {
 .footer .social-nav__li:not(:last-child) {
   margin-right: 30px;
 }
-
-.webp .social-link, .webp .search-btn, .webp .close-btn { background-image: url(../img/sprite.webp); }
-
-.webp .ex-review .pros-cons__list-pros .pros-cons__li:before { background-image: url(../img/sprite.webp); }
-
-.webp .ex-review .pros-cons__list-cons .pros-cons__li:before { background-image: url(../img/sprite.webp); }
 
 /*# sourceMappingURL=srcmaps/style.css.map */

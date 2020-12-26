@@ -1,6 +1,9 @@
 .article-page
 	&__aside
 		width: 330px
+		position: sticky
+		top: -100%
+		height: fit-content
 		& .last-news .news-card__title
 			font-weight: normal
 			font-size: 16px
@@ -17,3 +20,69 @@
 		& .page-about__fix-cont
 			&:not(:first-child)
 				margin-top: 32px
+	&__fix-cont
+		display: flex
+		justify-content: space-between
+	&__article
+
+	& .article
+		width: 750px
+		padding-bottom: 32px
+		&__title
+			font-weight: bold
+			font-size: 36px
+			line-height: 48px
+		&__ph
+			width: 100%
+			object-fit: cover
+			margin: 30px 0
+		&__article
+			margin: 20px 0
+.hr-bottom
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 165px
+		height: 1px
+		background-color: var(--black30)
+
+.similar
+	margin-top: 24px
+	&__fix-cont
+		padding-bottom: 24px
+	&__title
+		margin-bottom: 10px
+	&__list
+
+	&__li
+		position: relative
+		padding-left: 25px
+		&:before
+			content: ''
+			width: 15px
+			height: 2px
+			background-color: var(--orange)
+			position: absolute
+			left: 0
+			top: 50%
+		&:not(:last-child)
+			margin-bottom: 10px
+
+	&__link
+
+.tags
+	margin-top: 24px
+	&__fix-cont
+		padding-bottom: 24px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: flex-start
+	&__li
+		margin-right: 15px
+.recent-news
+	&__title
+		margin-bottom: 10px
