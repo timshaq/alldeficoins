@@ -33,6 +33,8 @@
 			line-height: 48px
 			max-height: 96px
 	&.second
+		@media(max-width:$tab)
+			margin: 40px 0
 		& .news-card__ph
 			height: 360px
 			object-fit: cover
@@ -50,6 +52,9 @@
 	&__fix-cont
 		display: flex
 		justify-content: space-between
+		@media(max-width:$tab)
+			flex-direction: column
+			align-items: center
 	&__col
 		width: 555px
 		&.large
@@ -95,8 +100,8 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+		@media(max-width:$tab)
+			width: calc(555px + 30px)
 	&__card
 		margin-bottom: 32px
 		width: 264px
-
-
