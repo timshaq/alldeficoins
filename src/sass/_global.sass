@@ -1,10 +1,7 @@
-$tab: 1199px
-$mTab: 992px
-$sTab: 768px
-$mob: 576px
-
-$dCol: 67
-$dMar: 31
+$xl: 1200px
+$lg: 992px
+$md: 768px
+$xs: 576px
 /*    <NULL>    */
 
 *
@@ -69,24 +66,26 @@ h1,h2,h3,h4,h5,h6
 	--orange: rgba(255,115,36,.9)
 	--blue: rgba(28,28,225,.8)
 	--blue50: rgba(28,28,225,.5)
+	--blue05: rgba(28,28,225,.05)
 
 .fix-cont
+	min-width: 320px
+	padding-left: 15px
+	padding-right: 15px
 	height: 100%
 	width: 100%
-	max-width: 1140px
-	min-width: 320px
 	margin: 0 auto
-	@media(max-width:$tab)
+	@media(min-width:$md)
 		max-width: 708px
-	@media(max-width:$sTab) 
-		max-width: none
-		padding-left: 15px
-		padding-right: 15px
+		padding-left: 0
+		padding-right: 0
+	@media(min-width:$xl) 
+		max-width: 1140px
 
 body, a
 	color: var(--black)
 main
-	margin-top: 130px
+	margin-top: 180px
 *
 	&::-webkit-scrollbar
 		height: 6px
@@ -102,6 +101,8 @@ main
 	font-size: 16px
 	line-height: 21px
 	&:hover
+		color: var(--orange)
+	&.active
 		color: var(--orange)
 .link
 	color: var(--blue)
@@ -119,12 +120,17 @@ main
 	font-family: Segoe UI
 	font-style: normal
 	font-weight: normal
-	font-size: 18px
+	font-size: 16px
 	line-height: 150%
+	@media(min-width:$md)
+		font-size: 18px
 .plain-title
 	font-weight: bold
-	font-size: 22px
+	font-size: 18px
 	line-height: 100%
+	word-break: break-word
+	@media(min-width:$md)
+		font-size: 22px
 .plain-small-title
 	font-weight: bold
 	font-size: 18px
@@ -195,8 +201,10 @@ main
 	&__article
 		font-size: 18px
 		line-height: 150%
-		width: 735px
+		width: 100%
 		padding-bottom: 23px
+		@media(min-width:$xl)
+			width: 735px
 
 .load-more
 	display: flex

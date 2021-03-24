@@ -1,0 +1,77 @@
+.market-cap
+	overflow-x: auto
+	overflow-y: hidden
+	position: relative
+	padding-left: 15px
+	padding-right: 15px
+	width: 1140px
+	margin: 0 auto
+	&__btn-row
+		width: 100%
+		display: flex
+		justify-content: flex-end
+		margin: 20px 0
+		position: sticky
+		left: 0
+		@media(min-width:$md)
+			margin: 40px 0
+	&__prev, &__next
+		font-size: 14px
+		line-height: 100%
+		color: var(--orange)
+		margin: 0 5px
+		padding: 7px 10px
+		border: 1px solid var(--black10)
+		@media(min-width:$md)
+			font-size: 18px
+			padding: 7px 30px
+			margin: 0 20px
+	&__prev
+	&__next
+
+	&__table
+		width: 100%
+		border-spacing: 0
+		margin: 0 auto
+	&__table-tr
+		&:nth-child(2n)
+			background-color: var(--blue05)
+	&__table-th
+		font-size: 18px
+		line-height: 100%
+		font-weight: bold
+		padding: 15px 0
+		&:first-child
+			width: 5%
+		&:nth-child(2)
+			width: 22%
+		&:nth-child(3)
+			width: 16%
+		&:nth-child(4)
+			width: 12%
+		&:nth-child(5)
+			width: 15%
+		&:nth-child(6)
+			width: 18%
+		&:last-child
+			width: 12%
+	&__table-orange
+		color: var(--orange)
+	&__table-td
+		padding: 15px 0
+		&:not(.market-cap__table-td_left)
+			text-align: center
+	&__table-minus, &__table-plus
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		&:before
+			width: 20px
+			height: 16px
+			margin-right: 5px
+	&__table-minus
+		&:before
+			content: url('../img/market-minus.svg')
+	&__table-plus
+		&:before
+			content: url('../img/market-plus.svg')

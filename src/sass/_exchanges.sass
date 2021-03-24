@@ -1,33 +1,50 @@
 .large-exchanges
-	margin-top: 40px
+	width: 290px
+	margin: 40px auto 0
+	@media(min-width:$md)
+		width: 100%
+		margin: 20px 0 0 0
 	&__large-card
 	&__fix-cont
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
 	& .large-card
-		width: 555px
-		padding: 15px 15px 24px
-		margin-bottom: 32px
 		display: flex
 		justify-content: space-between
 		border: 1px solid var(--black10)
+		padding: 10px
+		width: 100%
+		&:not(:last-child)
+			margin-bottom: 20px
+		@media(min-width:$md)
+			width: 350px
+			padding: 15px 15px 24px
+			margin-bottom: 32px
+		@media(min-width:$xl)
+			width: 555px
+			padding: 15px 15px 24px
+			margin-bottom: 32px
 		&__preview
 			display: flex
 			flex-direction: column
 			justify-content: space-between
-			width: 150px
-			min-height: 208px
-			&:hover
-				& .large-card__title,
-				& .large-card__subtitle
-					color: var(--blue)
+			width: 75px
+			@media(min-width:$xl)
+				width: 150px
+				min-height: 208px
+				&:hover
+					& .large-card__title,
+					& .large-card__subtitle
+						color: var(--blue)
 
 		&__ph
 			width: 100%
-			height: 144px
+			height: auto
 			object-fit: contain
 			margin-bottom: 8px
+			@media(min-width:$xl)
+				height: 144px
 		&__title
 			text-align: center
 			margin-bottom: 16px
@@ -35,10 +52,17 @@
 			font-size: 18px
 			line-height: 100%
 			text-align: center
+			display: none
+			@media(min-width:$md)
+				display: block
 		&__description
-			width: 345px
 			display: flex
 			flex-direction: column
+			width: 175px
+			@media(min-width:$md)
+				width: 200px
+			@media(min-width:$xl)
+				width: 345px
 		&__article
 			overflow: hidden
 			text-overflow: ellipsis
@@ -47,14 +71,22 @@
 			-webkit-line-clamp: 4
 			line-height: 27px
 			max-height: 108px
+			margin-bottom: 10px
 		&__btn
 			background-color: var(--blue50)
-			padding: 21px 0
+			padding: 10px 0
 			display: flex
 			justify-content: center
 			width: 100%
 			margin-top: auto
+			@media(min-width:$xl)
+				padding: 21px 0
 .thumb-exchanges
+	width: 290px
+	margin: 20px auto 0
+	@media(min-width:$md)
+		width: 100%
+		margin: 20px 0 0 0
 	&__large-card
 	&__fix-cont
 		display: flex
@@ -65,12 +97,21 @@
 		display: flex
 		justify-content: space-between
 		margin-bottom: 24px
-		width: 263px
+		width: 100%
 		min-height: 168px
 		padding: 10px 15px 15px
+		@media(min-width:$md)
+			width: 229px
+			padding: 10px
+		@media(min-width:$xl)
+			width: 263px
+			padding: 10px 15px 15px
 		&__preview
 			width: 83px
+			@media(min-width:$md)
+				width: 65px
 		&__rating
+			display: none
 		&__star
 			width: 12px
 			height: 11px
@@ -82,6 +123,21 @@
 			margin-top: 23px
 		&__description
 			width: 135px
+			&:nth-child(2)
+				font-size: 14px
+				letter-spacing: -0.05em
+				margin-top: 20px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 4
+				line-height: 21px
+				max-height: 84px
+			@media(min-width:$md)
+				width: 125px
+			@media(min-width:$xl)
+				width: 135px
 		&__title
 			font-size: 18px
 		&__article

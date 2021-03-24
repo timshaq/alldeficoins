@@ -17,67 +17,104 @@
 		margin-bottom: 9px
 	&__ph
 		width: 100%
-		height: 176px
 		object-fit: cover
+		@media(min-width:$xl)
+			height: 176px
 	&.first
+		@media(min-width:$md)
+			width: 48%
+		@media(min-width:$xl)
+			width: 100%
+			margin-bottom: 50px
 		& .news-card__ph
-			height: 360px
 			object-fit: cover
+			@media(min-width:$xl)
+				height: 360px
 		& .news-card__title
-			font-size: 36px
-			overflow: hidden
-			text-overflow: ellipsis
-			display: -webkit-box
-			-webkit-box-orient: vertical
-			-webkit-line-clamp: 2
-			line-height: 48px
-			max-height: 96px
+			@media(min-width:$xl)
+				font-size: 36px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 2
+				line-height: 48px
+				max-height: 96px
 	&.second
-		@media(max-width:$tab)
-			margin: 40px 0
+		margin-top: 40px
+		@media(min-width:$md)
+			width: 48%
+			margin-top: 0
+		@media(min-width:$xl)
+			margin-top: auto
+			width: 100%
 		& .news-card__ph
-			height: 360px
 			object-fit: cover
+			@media(min-width:$xl)
+				height: 360px
 		& .news-card__title
-			font-size: 32px
-			overflow: hidden
-			text-overflow: ellipsis
-			display: -webkit-box
-			-webkit-box-orient: vertical
-			-webkit-line-clamp: 2
-			line-height: 43px
-			max-height: 86px
+			@media(min-width:$xl)
+				font-size: 32px
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 2
+				line-height: 43px
+				max-height: 86px
 .last-news
 	margin-top: 41px
+	width: 320px
+	margin-right: auto
+	margin-left: auto
+	@media(min-width:$md)
+		width: 100%
 	&__fix-cont
 		display: flex
+		flex-wrap: wrap
 		justify-content: space-between
-		@media(max-width:$tab)
-			flex-direction: column
-			align-items: center
+		@media(min-width:$xl)
+			align-items: stretch
+			justify-content: space-between
 	&__col
-		width: 555px
+		margin-top: 40px
+		@media(min-width:$xl)
+			width: 555px
 		&.large
 			display: flex
 			flex-direction: column
 			justify-content: space-between
+			@media(min-width:$md)
+				flex-direction: row
+			@media(min-width:$xl)
+				flex-direction: column
 	&__card
-
 	&__squares
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
 		& .news-card
-			width: 263px
+			width: 100%
 			margin-bottom: 16px
+			@media(min-width:$md)
+				width: 48%
+			@media(min-width:$xl)
+				width: 263px
 	&__rows
+		margin: 20px 0
+		@media(min-width:$xl)
+			margin-top: 20px
+			margin-bottom: 0
 		& .news-card
 			flex-direction: row
 			&:not(:last-child)
 				margin-bottom: 32px
 			&__ph
 				width: 180px
-				height: 120px
+				height: 100%
+				object-fit: cover
+				@media(min-width:$md)
+					height: 120px
 			&__col
 				flex: 2 1 359px
 				display: flex
@@ -86,22 +123,34 @@
 				margin-left: 15px
 				padding-right: 15px
 			&__title
-				font-size: 20px
-				overflow: hidden
-				text-overflow: ellipsis
-				display: -webkit-box
-				-webkit-box-orient: vertical
-				-webkit-line-clamp: 2
-				line-height: 27px
-				max-height: 54px
+				@media(min-width:$md)
+					font-size: 20px
+					overflow: hidden
+					text-overflow: ellipsis
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 2
+					line-height: 27px
+					max-height: 54px
 .recent-news
 	margin-top: 60px
+	width: 320px
+	margin-right: auto
+	margin-left: auto
+	@media(min-width:$md)
+		width: 100%
 	&__fix-cont
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		@media(max-width:$tab)
-			width: calc(555px + 30px)
+		@media(min-width:$xl)
+			justify-content: flex-start
 	&__card
+		width: 100%
 		margin-bottom: 32px
-		width: 264px
+		@media(min-width:$md)
+			width: 48%
+		@media(min-width:$xl)
+			width: 264px
+			&:not(:nth-child(4n))
+				margin-right: 13.5px

@@ -52,11 +52,25 @@
 					<a href="#" class="header__social-link social-link fb" title="facebook"></a>
 				</li>
 			</ul>
-			<button class="header__search-btn search-btn header__col">
+			<button id="searchOpen" class="header__search-btn search-btn header__col">
+			</button>
+			<button id="burgerOpen" type="button" class="header__burger">
+				<svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M30 0.601562H0V2.72308H30V0.601562Z" fill="white"/>
+					<path d="M30 10.1035H0V12.2251H30V10.1035Z" fill="white"/>
+					<path d="M30 19.6653H0V21.7868H30V19.6653Z" fill="white"/>
+				</svg>
+			</button>
+
+			<button id="burgerClose" type="button" class="header__burger-close close-btn">
 			</button>
 		</nav>
-		<div class="header__search">
-			
-		</div>
+		<form id="searchForm" class="header__search">
+			<input type="text" class="header__search-input" placeholder="How to sell Bitcoin?">
+			<button type="submit" class="header__search-btn search-btn header__col">
+			</button>
+			<button id="searchClose" type="button" class="header__search-close close-btn">
+			</button>
+		</form>
 	</div>
 </header>

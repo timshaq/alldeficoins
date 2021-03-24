@@ -1,43 +1,58 @@
 .article-page
 	&__aside
-		width: 330px
-		position: sticky
-		top: -100%
-		height: fit-content
+		display: none
+		@media(min-width:$xl)
+			display: block
+			width: 330px
+			position: sticky
+			top: -100%
+			height: fit-content
 		& .last-news .news-card__title
 			font-weight: normal
 			font-size: 16px
 			line-height: 21px
 			letter-spacing: -0.05em
 		& .last-news__rows .news-card__ph
-			height: 80px
-			width: 135px
+			@media(min-width:$xl)
+				height: 80px
+				width: 135px
 		& .last-news__rows .news-card__col
-			flex: auto
-			width: 180px
+			@media(min-width:$xl)
+				flex: auto
+				width: 180px
 		& .plain-card
 			margin-top: 24px
 		& .page-about__fix-cont
 			&:not(:first-child)
 				margin-top: 32px
 	&__fix-cont
-		display: flex
-		justify-content: space-between
+		@media(min-width:$xl)
+			display: flex
+			justify-content: space-between
 	&__article
 
 	& .article
-		width: 750px
 		padding-bottom: 32px
+		@media(min-width:$xl)
+			width: 750px
 		&__title
 			font-weight: bold
-			font-size: 36px
-			line-height: 48px
-		&__ph
+			font-size: 30px
+			@media(min-width:$xl)
+				font-size: 36px
+				line-height: 48px
+		&__ph, & img
 			width: 100%
+			height: auto
 			object-fit: cover
 			margin: 30px 0
-		&__article
+		&__article, & p
 			margin: 20px 0
+			font-family: Segoe UI
+			font-style: normal
+			font-weight: normal
+			font-size: 18px
+			line-height: 150%
 .hr-bottom
 	position: relative
 	&:before
@@ -83,6 +98,8 @@
 		justify-content: flex-start
 	&__li
 		margin-right: 15px
+		& .tag
+			line-height: 20px
 .recent-news
 	&__title
 		margin-bottom: 10px
